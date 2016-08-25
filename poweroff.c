@@ -1,7 +1,7 @@
 /*
  * poweroff.c
  *
- * turn the pwer of the pi-top hub off
+ * turn the power of the pi-top hub off
  *
  * IMPORTANT WARNING: to not execute except at the end of the shutdown process
  * otherwise your sd card might get corrupted
