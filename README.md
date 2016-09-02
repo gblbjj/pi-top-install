@@ -107,7 +107,7 @@ see https://github.com/rricharz/pi-top-install/blob/master/speaker.txt
 
 **5 - Use a printer with Raspbian Jessie (and pi-topOS)**
 
-The instuctions at the following link are for Raspbian Jessie and for pi-topOS, 
+The instructions at the following link are for Raspbian Jessie and for pi-topOS, 
 see https://github.com/rricharz/pi-top-install/blob/master/printer.txt
 
 You are encouraged to contribute to this repository. See https://guides.github.com/activities/hello-world/
