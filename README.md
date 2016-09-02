@@ -102,8 +102,13 @@ to resolve this problem.
 
 **4 - Use the pi-top speaker with Raspbian Jessie (and pi-topOS)**
 
-Thanks to Norman Lawrence we have now well written instructions for the installation of the pi-top- speaker.
+Thanks to Norman Lawrence we have now well written instructions for the installation of the pi-top-speaker.
 see https://github.com/rricharz/pi-top-install/blob/master/speaker.txt
+
+**5 - Use a printer with Raspbian Jessie (and pi-topOS)**
+
+The instuctions at the following link are for Raspbian Jessie and for pi-topOS, 
+see https://github.com/rricharz/pi-top-install/blob/master/printer.txt
 
 You are encouraged to contribute to this repository. See https://guides.github.com/activities/hello-world/
 to learn how to create, modify and submit a branch. Or open an issue in this repository to report problems or suggestions.

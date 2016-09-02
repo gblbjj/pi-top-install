@@ -1,0 +1,35 @@
+####################################################
+Setting up a printer in pi-topOS and Raspbian Jessie
+####################################################
+
+The following instructions have been tested both with pi-topOS and Raspbian Jessie.
+
+
+Installing the software
+#######################
+
+Open a terminal and type the following:
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install cups
+sudo usermod -a -G lpadmin pi
+
+The last command puts the user pi in the list of administrators for printers
+
+Now open a web browser. In our tests, Chromium was unable or much too slow for this task. Therefore, we recommend to use
+
+Menu->Internet->Web Browser
+
+Type the following address in the address field of the web browser
+
+localhost:631
+
+You should now get a screen to install and configure your printer. Select the Administration tab and then "add printer".
+Follow the instructions, select your printer and a driver for your printer or a generic driver for the type of your printer.
+Set all options to default.
+
+Using the printer
+*****************
+
+You should now be able to use your printer in Text Editor and LibreOffice.
