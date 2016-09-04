@@ -12,3 +12,6 @@ fi
 # copy the file to /home/pi/bin, make it executable
 cp brightness /home/pi/bin
 chmod +x /home/pi/bin/brightness
+
+echo "brightness installed"
+echo "Please make sure that spi is turned on in Menu->Preferences->Raspberry Pi Configuration->Interfaces"

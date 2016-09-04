@@ -20,3 +20,6 @@ sudo systemctl disable pt-poweroff.service
 sudo cp pt-poweroff.service /lib/systemd/system
 cd /lib/systemd/system
 sudo systemctl enable pt-poweroff.service
+
+echo "poweroff installed"
+echo "Please make sure that spi is turned on in Menu->Preferences->Raspberry Pi Configuration->Interfaces"

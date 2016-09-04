@@ -18,6 +18,8 @@ not protect the battery from further depleting.
 
 **2 - program to set the screen brightness (version 1.0, released)**
 
+For installation instructions, see below under INSTALLATION INSTRUCIONS FOR 2 AND/OR 3.
+
 Usage (new_value is a screen brightness value between 3 and 10):
 ```
 brightness new_value
@@ -48,7 +50,7 @@ Instead, you can also copy the lxde-pi-rc.xml file found in this repository to /
 This program will help to protect your battery by shutting the pi-top-hub-controller
 off after a shutdown of the Raspbery Pi
 
-*Installation instructions for 2 and/or 3*
+**INSTALLATION INSTRUCTIONS FOR 2 AND/OR 3**
 
 To download this repository, open a terminal and type:
 ```
@@ -59,7 +61,7 @@ cd pi-top-install
 chmod +x install*
 ```
 
-Make sure that **spi** is turned on in *Menu/Preferences/Raspberry Pi Configuration/Interfaces*.
+Make sure that **spi** is turned on in *Menu->Preferences->Raspberry Pi Configuration->Interfaces*.
 
 Make sure that your system is up-to-date:
 ```
