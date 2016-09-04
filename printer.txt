@@ -41,3 +41,29 @@ Using the printer
 
 You should now be able to use your printer in
 Text Editor and LibreOffice.
+
+Note added on September 4, 2016
+*******************************
+
+There seems to be a nasty little bug in CUPS in the newest version of Raspbian Jessie (not pi-top).
+If you get a red ERROR during bootup messages, do the following:
+
+open a terminal and type
+systemctl status systemd.modules.load.service
+
+If the message reads
+Loaded: loaded (..)
+Active: failed
+
+proceed as follows (thanks to Rive on raspberrypi.org/forums)
+
+open a terminal and type
+sudo nano /etc/modules-load.d/cups-filters.conf
+
+comment all out, so that every line starts with a #, especially
+#lp
+#ppdev
+#partport_pc
+
+save with ctr-o and quit the nano editor with ctrl-x. Then reboot your rpi. The error message should be gone.
+
