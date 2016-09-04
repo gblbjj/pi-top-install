@@ -45,7 +45,7 @@ Text Editor and LibreOffice.
 Note added on September 4, 2016
 *******************************
 
-There seems to be a nasty little bug in CUPS in the newest version of Raspbian Jessie (not pi-top).
+There seems to be a nasty little bug in CUPS in the newest version of Raspbian Jessie (not pi-topOS).
 If you get a red ERROR during bootup messages, do the following:
 
 open a terminal and type
