@@ -18,7 +18,7 @@ not protect the battery from further depleting.
 
 **2 - program to set the screen brightness (version 1.0, released)**
 
-For installation instructions, see below under INSTALLATION INSTRUCIONS FOR 2 AND/OR 3.
+For installation instructions, see below under INSTALLATION INSTRUCTIONS FOR 2 AND/OR 3.
 
 Usage (new_value is a screen brightness value between 3 and 10):
 ```
@@ -61,7 +61,7 @@ cd pi-top-install
 chmod +x install*
 ```
 
-Make sure that **spi** is turned on in *Menu->Preferences->Raspberry Pi Configuration->Interfaces*.
+**Make sure that spi is turned on** in *Menu->Preferences->Raspberry Pi Configuration->Interfaces*.
 
 Make sure that your system is up-to-date:
 ```
