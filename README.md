@@ -61,7 +61,7 @@ cd pi-top-install
 chmod +x install*
 ```
 
-**Make sure that spi is turned on** in *Menu->Preferences->Raspberry Pi Configuration->Interfaces*.
+Make sure that **spi** is turned on in *Menu->Preferences->Raspberry Pi Configuration->Interfaces*.
 
 Make sure that your system is up-to-date:
 ```
