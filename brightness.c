@@ -132,7 +132,9 @@ int main(int argc, char **argv)
 	if (ok) {
 		printf("Receiving: 0x%X\n", data);
 		printf("Current brightness = %d\n", brightness);
-		
+		//force to 0 as set to 1 if rebooted while in screenbitoff=0
+		//the state is stored on pi-top-hub, but isn't reinitialised on reboot
+		screenoffbit=0; 
 		// calculate new brightness
 		if (argc == 2) {
 			if (strcmp(argv[1],"increase") == 0) {
@@ -141,6 +143,12 @@ int main(int argc, char **argv)
 			else if (strcmp(argv[1],"decrease") == 0) {
 				brightness--;
 			}
+			else if (strcmp(argv[1],"off") == 0) {
+                                screenoffbit=1;
+                        }
+			else if (strcmp(argv[1],"on") == 0) {
+                                screenoffbit=0;
+                        }
 			else {
 				sscanf(argv[1],"%d", &brightness);
 			}
@@ -152,10 +160,10 @@ int main(int argc, char **argv)
 		if (brightness < 3)
 			brightness = 3;
 		printf("Requested brightness = %d\n", brightness);
+                printf("Requested off = %d\n", screenoffbit);
 		
 		// calculate data to send
-		shutdown = 0;
-		screenoffbit = 0;		
+		shutdown = 0;		
 		new_data = calculate();
 				
 		// send new data until accepted
