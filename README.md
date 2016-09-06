@@ -16,7 +16,7 @@ charging. But unless you also install 3 (automatic poweroff) it will not be able
 to turn off the pi-top hub and the power to the Raspberry Pi. It would therefore
 not protect the battery from further depleting.
 
-**2 - program to set the screen brightness (version 1.0, released)**
+**2 - program to set the screen brightness (version 1.1, released)**
 
 For installation instructions, see below under INSTALLATION INSTRUCTIONS FOR 2 AND/OR 3.
 
@@ -43,6 +43,14 @@ keyboard section of /home/pi/.config/openbox/lxde-pi-rc.xml:
 ```
 
 Instead, you can also copy the lxde-pi-rc.xml file found in this repository to /home/pi/.config/openbox
+
+Very experienced users can use the command "brightness off" to turn the screen backlight off, and "brightness on"
+or any other brightness command to turn it back on. But be aware that a turned off screen backlight might easily be
+mistaken for a Raspberry Pi, which has been shut down. Do not shut off your rpi or cut power to it in this state,
+and do not use "brightness off" unless you have tested that your brightness keys work, so that you can turn power
+back on! Also, please be aware that if you have a laptop pi-top with battery, it still draws power from the battery
+in this state. In order to save battery power, it is much better to shut down the pi-top as you would
+normally do. It is therefore not recommended for regular users to use the command "brightness off"! 
 
 
 **3 - program and system service to turn the hub-controller off after shutdown (version 1.0, released)**
