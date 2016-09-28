@@ -1,0 +1,13 @@
+# uninstall brightness in /home/pi/bin
+
+# check if the install script is run by the 'pi' user
+if [ `whoami` != pi ]; then
+        echo "Please run as 'pi' user"
+        exit 1
+fi
+
+# remove file from /home/pi/bin
+rm /home/pi/bin/brightness
+
+echo "brightness uninstalled"
+

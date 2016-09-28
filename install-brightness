@@ -1,4 +1,4 @@
-# install brightness and brightness.py in /home/pi/bin
+# install brightness in /home/pi/bin
 
 # check if the install script is run by the 'pi' user
 if [ `whoami` != pi ]; then
