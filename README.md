@@ -4,6 +4,9 @@ In this repository you find tips, tricks and scripts to install the necessary ca
 the pi-top hardware using a standard raspbian jessie distribution. Several users have confirmed that the
 brightness and shutdown programs also work properly on a pi-topCEED using Raspbian.
 
+The current version of the programs work very nicely with the PIXEL desktop, but when upgrading to PIXEL
+the brightess keys need to be configured again.
+
 **1 - Battery status display widget (released)**
 
 See separate repository https://github.com/rricharz/pi-top-battery-status
