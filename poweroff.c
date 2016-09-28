@@ -28,6 +28,7 @@
 
 
 #include <stdio.h>
+#include <unistd.h>
 #include <string.h>
 #include <wiringPiSPI.h>
 
@@ -97,7 +98,7 @@ int main(int argc, char **argv)
 	int count, ok;
 	
 	printf("poweroff version 1.0\n");
-	usleep(2000000);   // let other processes finish
+	sleep(5);   // let other processes finish
 	
 	int spi = wiringPiSPISetup(1, 9600);
 	if (spi < 0) {

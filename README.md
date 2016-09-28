@@ -53,7 +53,7 @@ in this state. In order to save battery power, it is much better to shut down th
 normally do. It is therefore not recommended for regular users to use the command "brightness off"! 
 
 
-**3 - program and system service to turn the hub-controller off after shutdown (version 1.0, released)**
+**3 - program and system service to turn the hub-controller off after shutdown (version 1.1, released)**
 
 This program will help to protect your battery by shutting the pi-top-hub-controller
 off after a shutdown of the Raspbery Pi
