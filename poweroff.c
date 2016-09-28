@@ -97,8 +97,8 @@ int main(int argc, char **argv)
 	unsigned char data, new_data;
 	int count, ok;
 	
-	printf("poweroff version 1.0\n");
-	sleep(5);   // let other processes finish
+	printf("poweroff version 1.1\n");
+	sleep(6);   // let other processes finish
 	
 	int spi = wiringPiSPISetup(1, 9600);
 	if (spi < 0) {

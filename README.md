@@ -103,6 +103,17 @@ make
 ```
 Then use the install scripts again to reinstall the programs
 
+*Upgrading the programs*
+
+Open a terminal and type
+
+```
+  cd Dowloads/pi-top-install
+  pull
+  install-brightness
+  install-poweroff
+```
+
 *What to do if brightness and shutdown stop working*
 
 Is is possible to put the pi-top-hub-controller into a strange state by experimenting with other devices on the
