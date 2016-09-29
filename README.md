@@ -113,7 +113,7 @@ Open a terminal and type
 
 ```
   cd Dowloads/pi-top-install
-  pull
+  git pull
   install-brightness
   install-poweroff
 ```
