@@ -113,3 +113,10 @@ to download a new image and start from scratch.
 If you cannot see your speaker, check the 40 pin cable between the Raspberry Pi and the hub-controller,
 or make sure that the i2c lines are connected using jumper cables.
 
+Upgrading to PIXEL desktop
+**************************
+
+If you upgrade your Raspbian Jessie to the new PIXEL desktop using "sudo apt-get dist-upgrade", your speaker
+will stop working, because the file /home/pi/.config/lxsession/LXDE-pi/autostart gets overwritten. You need to
+manually add the line "@pt-speaker" to this file after upgrading.
+

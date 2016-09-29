@@ -6,7 +6,9 @@ brightness and shutdown programs also work properly on a pi-topCEED using Raspbi
 
 The current version of the programs work very nicely with the PIXEL desktop, but when upgrading to PIXEL
 the brightess keys need to be configured again. Important: upgrade to the latest version after installing PIXEL
-(see upgrading the programs below).
+(see upgrading the programs below). Also, if you are using the pi-topSPEAKER, you need to manually modify the desktop
+autostart file after installation of PIXEL. See instructions at the bottom of the speaker installation instructions
+(link in item 5 below).
 
 **1 - Battery status display widget (released)**
 
