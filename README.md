@@ -5,7 +5,8 @@ the pi-top hardware using a standard raspbian jessie distribution. Several users
 brightness and shutdown programs also work properly on a pi-topCEED using Raspbian.
 
 The current version of the programs work very nicely with the PIXEL desktop, but when upgrading to PIXEL
-the brightess keys need to be configured again.
+the brightess keys need to be configured again. Important: upgrade to the latest version after installing PIXEL
+(see upgrading the programs below).
 
 **1 - Battery status display widget (released)**
 
@@ -116,6 +117,8 @@ Open a terminal and type
   install-brightness
   install-poweroff
 ```
+
+If you do not have the folder pi-top-install in Downloads anymore, you need to do a complete new installation.
 
 *What to do if brightness and shutdown stop working*
 
