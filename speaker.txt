@@ -113,6 +113,8 @@ to download a new image and start from scratch.
 If you cannot see your speaker, check the 40 pin cable between the Raspberry Pi and the hub-controller,
 or make sure that the i2c lines are connected using jumper cables.
 
+If your speaker still does not work, it is time to get in contact with support@pi-top.com
+
 Upgrading to PIXEL desktop
 **************************
 
