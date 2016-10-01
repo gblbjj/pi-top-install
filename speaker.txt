@@ -22,6 +22,11 @@ pins of the hub-controller, either using the 40 pin cable or some jumper cables.
 Install the software
 ####################
 
+First, open a terminal and type
+	sudo apt-get update
+	sudo apt-get install python-smbus wiringpi
+This makes sure that these libraries are not accidentally removed in future upgrades.
+
 The installation instructions that come with the pi-top speaker recommend the following two steps:
 	sudo apt-get update
 	sudo apt-get install -y pt-speaker
