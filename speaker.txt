@@ -97,6 +97,11 @@ Test whether the Raspberry Pi can talk to the speaker using i2c:
 ################################################################
 
 Open a terminal and type
+    sudo apt-get install python-smbus wiringpi
+    
+Reboot and check whether the speaker works. If not, proceed as follows:
+
+Open a terminal and type
 	i2cdetect -y 1
 	
 You should see your speaker at address 73, if you have set the switch to mono.
