@@ -24,7 +24,7 @@ Install the software
 
 First, open a terminal and type
 	sudo apt-get update
-	sudo apt-get install python-smbus wiringpi
+	sudo apt-get install -y python-smbus wiringpi i2c-tools
 This makes sure that these libraries are not accidentally removed in future upgrades.
 
 The installation instructions that come with the pi-top speaker recommend the following two steps:
@@ -102,7 +102,7 @@ Test whether the Raspberry Pi can talk to the speaker using i2c:
 ################################################################
 
 Open a terminal and type
-    sudo apt-get install python-smbus wiringpi
+    sudo apt-get install -y python-smbus wiringpi i2c-tools
     
 Reboot and check whether the speaker works. If not, proceed as follows:
 
@@ -130,5 +130,9 @@ Upgrading to PIXEL desktop
 
 If you upgrade your Raspbian Jessie to the new PIXEL desktop using "sudo apt-get dist-upgrade", your speaker
 will stop working, because the file /home/pi/.config/lxsession/LXDE-pi/autostart gets overwritten. You need to
-manually add the line "@pt-speaker" to this file after upgrading.
+manually add the line "@pt-speaker &" to this file after upgrading.
+
+If it still does not work after a reboot, do a
+	sudo apt-get install -y python-smbus wiringpi i2c-tools
+and reboot.
 
