@@ -130,7 +130,7 @@ Upgrading to PIXEL desktop
 
 If you upgrade your Raspbian Jessie to the new PIXEL desktop using "sudo apt-get dist-upgrade", your speaker
 will stop working, because the file /home/pi/.config/lxsession/LXDE-pi/autostart gets overwritten. You need to
-manually add the line "@pt-speaker &" to this file after upgrading.
+manually add the line "@pt-speaker" to this file after upgrading.
 
 If it still does not work after a reboot, do a
 	sudo apt-get install -y python-smbus wiringpi i2c-tools
