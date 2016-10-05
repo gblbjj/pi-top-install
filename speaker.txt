@@ -126,7 +126,7 @@ or make sure that the i2c lines are connected using jumper cables.
 If your speaker still does not work, it is time to get in contact with support@pi-top.com
 
 Upgrading to PIXEL desktop
-**************************
+##########################
 
 If you upgrade your Raspbian Jessie to the new PIXEL desktop using "sudo apt-get dist-upgrade", your speaker
 will stop working, because the file /home/pi/.config/lxsession/LXDE-pi/autostart gets overwritten. You need to
