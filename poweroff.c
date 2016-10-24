@@ -86,7 +86,7 @@ int calculate()
 	if (screenoffbit)
 		data += SCREENOFFMASK;
 	if (parity7(data & 3))
-		data += LIDBITMASK;		// parity ofthe two state bits
+		data += LIDBITMASK;		// parity of the two state bits
 	return data;		
 }
 
@@ -97,8 +97,8 @@ int main(int argc, char **argv)
 	unsigned char data, new_data;
 	int count, ok;
 	
-	printf("poweroff version 1.1\n");
-	sleep(6);   // let other processes finish
+	printf("Pi-top poweroff version 1.1 rr\n");
+	sleep(5);   // let other processes finish
 	
 	int spi = wiringPiSPISetup(1, 9600);
 	if (spi < 0) {

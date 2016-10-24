@@ -22,14 +22,17 @@ pins of the hub-controller, either using the 40 pin cable or some jumper cables.
 Install the software
 ####################
 
-First, open a terminal and type
+Important: First, open a terminal and type
 	sudo apt-get update
 	sudo apt-get install -y python-smbus wiringpi i2c-tools
+	
 This makes sure that these libraries are not accidentally removed in future upgrades.
 
-The installation instructions that come with the pi-top speaker recommend the following two steps:
+The installation instructions that come with the pi-top speaker recommend the following two steps. These steps
+should not be required anymore in the October 2016 version of pi-topOS, but will not hurt.
 	sudo apt-get update
 	sudo apt-get install -y pt-speaker
+	
 This works well with pi-topOS and you should have working sound. If you are using Raspbian Jessie then you will
 almost certainly be greated with the response:
 	"Unable to locate package pt-speaker"
@@ -110,9 +113,6 @@ Open a terminal and type
 	i2cdetect -y 1
 	
 You should see your speaker at address 73, if you have set the switch to mono.
-
-If i2cdetect is not installed, you can install it with
-	sudo apt-get install i2c-tools
 	
 If i2cdetect reports that it cannot find "/dev/i2c-1" you need to switch i2c on in
 Menu->Preferences->Raspberry Pi Configuration -> Interfaces
