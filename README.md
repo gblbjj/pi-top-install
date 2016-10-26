@@ -51,6 +51,7 @@ keyboard section of /home/pi/.config/openbox/lxde-pi-rc.xml:
 ```
 
 Instead, you can also copy the lxde-pi-rc.xml file found in this repository to /home/pi/.config/openbox
+This filealso contains working keys for autio mute toggle, audio volume +, audio volume -, file manager and terminal.
 
 Very experienced users can use the command "brightness off" to turn the screen backlight off, and "brightness on"
 or any other brightness command to turn it back on. But be aware that a turned off screen backlight might easily be
