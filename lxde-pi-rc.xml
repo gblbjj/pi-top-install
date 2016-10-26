@@ -342,6 +342,22 @@
       </action>
     </keybind>
 
+    <keybind key="0x79">
+      <action name="Execute">
+        <command>amixer set PCM toggle</command>
+      </action>
+    </keybind>
+    <keybind key="0x7a">
+      <action name="Execute">
+        <command>amixer set PCM 2dB-</command>
+      </action>
+    </keybind>
+    <keybind key="0x7b">
+      <action name="Execute">        
+        <command>amixer set PCM 2dB+</command>
+      </action>
+    </keybind>
+
   </keyboard>
   <mouse>
     <dragThreshold>8</dragThreshold>
