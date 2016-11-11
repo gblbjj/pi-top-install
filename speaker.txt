@@ -101,6 +101,18 @@ Then save the file, (Ctrl x) and close the editor an reboot your system
 
 If it still does not work, proceed as follows
 
+Enable sound by modifying /etc/modules
+######################################
+Thanks to Trevor Baxter, who has suggested this solution.
+
+Open a terminal and enter the followig:
+   sudo nano /etc/modules
+   
+Add this line to the script, if it does not exist:
+  snd_bcm2835
+  
+Save,exit and then reboot. You should now have working sound.
+
 Test whether the Raspberry Pi can talk to the speaker using i2c:
 ################################################################
 
