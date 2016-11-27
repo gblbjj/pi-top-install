@@ -56,12 +56,12 @@ add the following line:
 
 save the file and close the editor.
 
-Navgate to your home directory and get the required public key:
+Navigate to your home directory and get the required public key:
 
 	cd
  	wget http://apt.pi-top.com/apt.pi-top.com.gpg.key
 
-Add the key to the APT keyring, then remove it fromyourhome directory
+Add the key to the APT keyring, then remove it from your home directory
 
  	sudo apt-key add apt.pi-top.com.gpg.key
  	rm apt.pi-top.com.gpg.key
