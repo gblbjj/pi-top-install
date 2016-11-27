@@ -54,13 +54,17 @@ add the following line:
 
 	deb http://apt.pi-top.com/raspbian/ jessie main
 
-save the file and close the editor and get the required public key:
+save the file and close the editor.
 
+Navgate to your home directory and get the required public key:
+
+	cd
  	wget http://apt.pi-top.com/apt.pi-top.com.gpg.key
 
-Add the key to the APT keyring
+Add the key to the APT keyring, then remove it fromyourhome directory
 
  	sudo apt-key add apt.pi-top.com.gpg.key
+ 	rm apt.pi-top.com.gpg.key
 
 Ensure the Pi is up to date:
 
