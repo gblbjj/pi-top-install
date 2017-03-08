@@ -76,8 +76,6 @@ Install the pi-top specific package pt-speaker
 
 	sudo apt-get install -y pt-speaker
 	
-Do not install pt-hub-controller in Raspbian, it is not fully compatible
-
 Reboot and then the pi-top speaker should be working.
 
 Try out the sound using omxplayer as follows:
