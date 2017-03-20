@@ -47,8 +47,10 @@ Navigate to /etc/apt/sources.list.d, by typing
  
 	cd /etc/apt/sources.list.d
 
-make a new file named pi-top.list :
+make a new file named pi-top.list:
 	sudo nano pi-top.list
+or if you prefer the desktop editor:
+    sudo leafpad pi-top.list
 
 add the following line:
 
@@ -77,6 +79,19 @@ Install the pi-top specific package pt-speaker
 	sudo apt-get install -y pt-speaker
 	
 Reboot and then the pi-top speaker should be working.
+
+Open a terminal and type
+    pt-speaker
+If you get an error message
+    gpio: Unable to find i2cdetect command
+this is due to a bug in the recent version of gpio.
+If this is the case, type
+    sudo nano /usr/bin/pt-speaker
+or
+    sudo leafpad /usr/bin/pt-speaker
+Navigate to line 93 (in leafpad you can turn on line numbers under options) and
+replace "gpio i2cdetect" with "i2cdetect -y 1". Save and reboot.
+Thanks to Nathan, who has suggested this workaround for the rpi 2 and 3.
 
 Try out the sound using omxplayer as follows:
  omxplayer -o hdmi filename
