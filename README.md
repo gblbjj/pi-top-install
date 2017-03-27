@@ -1,14 +1,7 @@
 # pi-top-install
 Do you want to run the standard raspbian jessie on the pi-top or pi-topCEED?
 In this repository you find tips, tricks and scripts to install the necessary capabilities to control
-the pi-top hardware using a standard raspbian jessie distribution. Several users have confirmed that the
-brightness and shutdown programs also work properly on a pi-topCEED using Raspbian.
-
-The current version of the programs work very nicely with the PIXEL desktop, but when upgrading to PIXEL
-the brightess keys need to be configured again. Important: upgrade to the latest version after installing PIXEL
-(see upgrading the programs below). Also, if you are using the pi-topSPEAKER, you need to manually modify the desktop
-autostart file after installation of PIXEL. See instructions at the bottom of the speaker installation instructions
-(link in item 4 below).
+the pi-top hardware using a standard raspbian jessie distribution.
 
 **1 - Battery status display widget (released)**
 
@@ -128,6 +121,9 @@ Open a terminal and type
 If you do not have the folder pi-top-install in Downloads anymore, you need to do a complete new installation.
 
 *What to do if brightness and shutdown stop working*
+
+If you have just upgraded your system and brightness or shutdown does not work anymoer, install the programs again.
+Something might have been overwritten during the upgrade process..
 
 Is is possible to put the pi-top-hub-controller into a strange state by experimenting with other devices on the
 spi bus. In this state it will not accept commands anymore. For details see the closed issue #2
