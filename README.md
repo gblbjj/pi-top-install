@@ -122,7 +122,7 @@ If you do not have the folder pi-top-install in Downloads anymore, you need to d
 
 *What to do if brightness and shutdown stop working*
 
-If you have just upgraded your system and brightness or shutdown does not work anymoer, install the programs again.
+If you have just upgraded your system and brightness or shutdown does not work anymore, install the programs again.
 Something might have been overwritten during the upgrade process..
 
 Is is possible to put the pi-top-hub-controller into a strange state by experimenting with other devices on the
