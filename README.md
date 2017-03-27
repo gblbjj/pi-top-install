@@ -68,7 +68,7 @@ To download this repository, open a terminal and type:
 ```
 sudo apt-get install wiringpi
 cd Downloads
-git clone git://github.com/rricharz/pi-top-install
+git clone --depth 1 git://github.com/rricharz/pi-top-install
 cd pi-top-install
 chmod +x install*
 ```
@@ -123,7 +123,7 @@ If you do not have the folder pi-top-install in Downloads anymore, you need to d
 *What to do if brightness and shutdown stop working*
 
 If you have just upgraded your system and brightness or shutdown does not work anymore, install the programs again.
-Something might have been overwritten during the upgrade process..
+Something might have been overwritten during the upgrade process.
 
 Is is possible to put the pi-top-hub-controller into a strange state by experimenting with other devices on the
 spi bus. In this state it will not accept commands anymore. For details see the closed issue #2
