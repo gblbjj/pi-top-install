@@ -7,7 +7,7 @@ Original written by Norman Lawrence, additions by Rene Richarz
 These instructions are for Raspbian Jessie and pi-topOS. If you are using Ubuntu Mate, see
 https://github.com/luzhuomi/pi-top-speaker for installation.
 
-The hardware installation instructions are inside the cover of the pi-top package. You need to tear it open to see them
+The hardware installation instructions are inside the cover of the pi-top speaker package. You need to tear it open to see them
 Set the switch to (m) for mono, (l) for left or (r) for right.
 
 How does the speaker work
