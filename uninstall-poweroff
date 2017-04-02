@@ -10,9 +10,9 @@ fi
 sudo systemctl disable pt-poweroff.service
 
 #remove poweroff from /opt/pi-top
-sudo rm /opt/pi-top/poweroff/poweroff
+sudo rm /opt/pi-top/poweroff
 
 # remove pt-poweroff service
-sudo rm /lib/systemd/system/pt-poweroff.service/pt-poweroff.service
+sudo rm /lib/systemd/system/pt-poweroff.service
 
 echo "poweroff uninstalled"
