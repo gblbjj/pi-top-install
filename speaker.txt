@@ -2,7 +2,8 @@
 Setting up the pi-top speaker in pi-topOS and Raspbian Jessie
 #############################################################
 
-Original written by Norman Lawrence, additions by Rene Richarz
+Original written by Norman Lawrence
+Additions and modifications by Rene Richarz and Mike Roberts
 
 These instructions are for Raspbian Jessie and pi-topOS. If you are using Ubuntu Mate, see
 https://github.com/luzhuomi/pi-top-speaker for installation.
@@ -26,61 +27,16 @@ Install the software
 ####################
 
 Important: First, open a terminal and type
-	sudo apt-get update
-	sudo apt-get install -y python-smbus wiringpi i2c-tools
+	sudo apt update
+	sudo apt install -y python-smbus wiringpi i2c-tools
 	
 This makes sure that these libraries are not accidentally removed in future upgrades.
 
-The installation instructions that come with the pi-top speaker recommend the following two steps. These steps
-should not be required anymore in the October 2016 version of pi-topOS, but will not hurt.
-	sudo apt-get update
-	sudo apt-get install -y pt-speaker
-	
-This works well with pi-topOS and you should have working sound. If you are using Raspbian Jessie then you will
-almost certainly be greated with the response:
-	"Unable to locate package pt-speaker"
+The software package for pi-topSPEAKER is available on Raspbian without any modifications. The installation instructions that come with the pi-top speaker recommend the following two steps. These steps
+are not required for versions of pi-topOS released after October 2016, but will not hurt.
+	sudo apt update
+	sudo apt install -y pt-speaker
 
-Second step for Raspbian Jessie users, which worked for me with my Pi3 and a number of other people who posted
-to this forum. [Thanks to John.newman80 who provided a link to the following website
-
-http://www.rs-online.com/designspark/electronics/eng/blog/lorawan-enabling-the-pi-top ].
-Do visit the website as the following instructions have been drawn from there.  
-
-Navigate to /etc/apt/sources.list.d, by typing
- 
-	cd /etc/apt/sources.list.d
-
-make a new file named pi-top.list:
-	sudo nano pi-top.list
-or if you prefer the desktop editor:
-    sudo leafpad pi-top.list
-
-add the following line:
-
-	deb http://apt.pi-top.com/raspbian/ jessie main
-
-save the file and close the editor.
-
-Navigate to your home directory and get the required public key:
-
-	cd
- 	wget http://apt.pi-top.com/apt.pi-top.com.gpg.key
-
-Add the key to the APT keyring, then remove it from your home directory
-
- 	sudo apt-key add apt.pi-top.com.gpg.key
- 	rm apt.pi-top.com.gpg.key
-
-Ensure the Pi is up to date:
-
- 	sudo apt-get update
-
- 	sudo apt-get upgrade
-
-Install the pi-top specific package pt-speaker
-
-	sudo apt-get install -y pt-speaker
-	
 Reboot and then the pi-top speaker should be working.
 
 Try out the sound using omxplayer as follows:
@@ -123,9 +79,6 @@ Save,exit and then reboot. You should now have working sound.
 Test whether the Raspberry Pi can talk to the speaker using i2c:
 ################################################################
 
-Open a terminal and type
-    sudo apt-get install -y python-smbus wiringpi i2c-tools
-    
 Reboot and check whether the speaker works. If not, proceed as follows:
 
 Open a terminal and type
@@ -133,9 +86,6 @@ Open a terminal and type
 	
 You should see your speaker at address 73, if you have set the switch to mono.
 	
-If i2cdetect reports that it cannot find "/dev/i2c-1" you need to switch i2c on in
-Menu->Preferences->Raspberry Pi Configuration -> Interfaces
-
 If i2cdetect still cannot find "/dev/i2c-1" your system is corrupted. pi-top recommends
 to download a new image and start from scratch.
 
@@ -143,35 +93,3 @@ If you cannot see your speaker, check the 40 pin cable between the Raspberry Pi 
 or make sure that the i2c lines are connected using jumper cables.
 
 If your speaker still does not work, it is time to get in contact with support@pi-top.com
-
-Workaround for a bug in the current version of gpio
-###################################################
-
-Open a terminal and type
-    pt-speaker
-
-If you get an error message
-    gpio: Unable to find i2cdetect command
-this is due to a bug in the recent version of gpio.
-
-If this is the case, type
-    sudo nano /usr/bin/pt-speaker
-or
-    sudo leafpad /usr/bin/pt-speaker
-
-Navigate to line 93 (in leafpad you can turn on line numbers under options) and
-replace "gpio i2cdetect" with "i2cdetect -y 1". Save and reboot.
-
-Thanks to Nathan, who has suggested this workaround for the rpi 2 and 3.
-
-Upgrading to PIXEL desktop
-##########################
-
-If you upgrade your Raspbian Jessie to the new PIXEL desktop using "sudo apt-get dist-upgrade", your speaker
-will stop working, because the file /home/pi/.config/lxsession/LXDE-pi/autostart gets overwritten. You need to
-manually add the line "@pt-speaker" to this file after upgrading.
-
-If it still does not work after a reboot, do a
-	sudo apt-get install -y python-smbus wiringpi i2c-tools
-and reboot.
-
