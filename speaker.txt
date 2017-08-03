@@ -5,6 +5,9 @@ Setting up the pi-top speaker in pi-topOS and Raspbian Jessie
 Original written by Norman Lawrence
 Additions and modifications by Rene Richarz and Mike Roberts
 
+Pi-top has added well written instructions for setting up the pi-top speaker, see
+https://github.com/pi-top/pi-topSPEAKER
+
 These instructions are for Raspbian Jessie and pi-topOS. If you are using Ubuntu Mate, see
 https://github.com/luzhuomi/pi-top-speaker for installation.
 
