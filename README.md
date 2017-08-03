@@ -66,7 +66,7 @@ off after a shutdown of the Raspbery Pi
 
 To download this repository, open a terminal and type:
 ```
-sudo apt-get install wiringpi
+sudo apt install wiringpi
 cd Downloads
 git clone --depth 1 git://github.com/rricharz/pi-top-install
 cd pi-top-install
@@ -77,14 +77,8 @@ Make sure that **spi** is turned on in *Menu->Preferences->Raspberry Pi Configur
 
 Make sure that your system is up-to-date:
 ```
-sudo apt-get update
-sudo apt-get upgrade
-```
-
-If you want to install 3 (automatic poweroff), you also need to make sure that your system
-is updated to the newest bootup and shutdown process, called systemd:
-```
-sudo apt-get dist-upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 To install 2 (brightness):
