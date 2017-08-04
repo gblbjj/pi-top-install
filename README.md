@@ -1,7 +1,9 @@
 # pi-top-install
-Do you want to run the standard raspbian jessie on the pi-top or pi-topCEED?
+Do you want to run the standard **raspbian jessie** on the pi-top or pi-topCEED?
 In this repository you find tips, tricks and scripts to install the necessary capabilities to control
 the pi-top hardware using a standard raspbian jessie distribution.
+
+For other linux distributions, see the links at the bottom of this page.
 
 **1 - Battery status display widget (released)**
 
@@ -126,11 +128,16 @@ to resolve this problem.
 
 **4 - Use the pi-top speaker with Raspbian Jessie (and pi-topOS)**
 
-Pi-top has added instructions for the installation of the pi-top-speaker at
-https://github.com/pi-top/pi-topSPEAKER
+Pi-top has added instructions for the installation of the pi-top-speaker in Raspbian Jessie at
+https://github.com/pi-top/pi-topSPEAKER.
+
+**Feedback**
 
 Please open an issue in this repository to report problems.
 
 The contributions in this repository are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The owner of this repository
 is not affiliated with pi-top.
+
+Using the pi-top with other linux distributions:
+  - for a very nice bootable **64-bit Gentoo image for the Pi-Top**, see https://github.com/sakaki-/gentoo-on-rpi3-64bit
