@@ -1,7 +1,7 @@
 # pi-top-install
-Do you want to run the standard **raspbian jessie** on the pi-top or pi-topCEED?
+Do you want to run the standard **Raspbian Stretch** or **Raspbian Jessie** on the pi-top or pi-topCEED?
 In this repository you find tips, tricks and scripts to install the necessary capabilities to control
-the pi-top hardware using a standard raspbian jessie distribution.
+the pi-top hardware using a standard Raspbian Stretch or Jessie distribution.
 
 For other linux distributions, see the links at the bottom of this page.
 
@@ -9,7 +9,7 @@ For other linux distributions, see the links at the bottom of this page.
 
 See separate repository https://github.com/rricharz/pi-top-battery-status
 
-This program has been tested on raspbian jessie and pi-topOS and should work well with any
+This program has been tested on Raspbian Stretch, Jessie and pi-topOS and should work well with any
 distribution. Do not forget to turn **i2c** on in *Menu/Preferences/Raspberry Pi Configuration/Interfaces*.
 The program will display the battery status, 
 and will shut down the Raspberry Pi if the battery capacity is low and not
@@ -19,7 +19,7 @@ not protect the battery from further depleting.
 
 **2 - program to set the screen brightness (version 1.1, released)**
 
-This program is for Raspbian Jessie only, it should not be installed in pi-topOS.
+This program is for Raspbian Stretch and Jessie only, it should not be installed in pi-topOS.
 
 For installation instructions, see below under INSTALLATION INSTRUCTIONS FOR 2 AND/OR 3.
 
@@ -59,7 +59,7 @@ normally do. It is therefore not recommended for regular users to use the comman
 
 **3 - program and system service to turn the hub-controller off after shutdown (version 1.1, released)**
 
-This program is for Raspbian Jessie only, it should not be installed in pi-topOS.
+This program is for Raspbian Stretch or Jessie only, it should not be installed in pi-topOS.
 
 This program will help to protect your battery by shutting the pi-top-hub-controller
 off after a shutdown of the Raspbery Pi
