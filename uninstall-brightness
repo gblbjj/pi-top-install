@@ -1,5 +1,10 @@
 # uninstall brightness in ~/bin
 
+if [ `whoami` = root ]; then
+  echo "Please do not run this installtion script being root"
+  exit 1
+fi
+
 # remove file from /home/pi/bin
 rm ~/bin/brightness
 

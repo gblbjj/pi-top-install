@@ -1,5 +1,10 @@
 # install brightness in ~/bin
 
+if [ `whoami` = root ]; then
+  echo "Please do not run this installtion script being root"
+  exit 1
+fi
+
 # create ~/bin directory, if it does not exist
 [ ! -d ~/bin  ] && mkdir ~/bin
 
