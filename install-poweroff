@@ -1,11 +1,5 @@
 # install automatic power off
 
-# check if the install script is run by the 'pi' user
-if [ `whoami` != pi ]; then
-        echo "Please run as 'pi' user"
-        exit 1
-fi
-
 # create /opt/pi-top directory, if it does not exist
 [ ! -d /opt/pi-top  ] && sudo mkdir /opt/pi-top
 
@@ -14,6 +8,7 @@ sudo cp poweroff /opt/pi-top
 sudo chmod 755 /opt/pi-top/poweroff
 
 # turn off pt-poweroff.service, if running (upgrade instead of installation)
+echo "Turning poweroff service off, if running from earlier installation:"
 sudo systemctl disable pt-poweroff.service
 
 # install pt-poweroff service
