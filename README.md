@@ -3,6 +3,10 @@ Do you want to run the standard **Raspbian Stretch** or **Raspbian Jessie** on t
 In this repository you find tips, tricks and scripts to install the necessary capabilities to control
 the pi-top hardware using a standard Raspbian Stretch or Jessie distribution.
 
+This repository contains currently programs and information for the original pi-top laptop and the pi-topCEED.
+It has not been tested with the new pi-top laptop (released October 15, 2017) with the sliding keyboard. It will be
+updated as soon as possible.
+
 For other linux distributions, see the links at the bottom of this page.
 
 **1 - Battery status display widget (released)**
