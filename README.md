@@ -3,9 +3,11 @@ Do you want to run the standard **Raspbian Stretch** or **Raspbian Jessie** on t
 In this repository you find tips, tricks and scripts to install the necessary capabilities to control
 the pi-top hardware using a standard Raspbian Stretch or Jessie distribution.
 
-This repository contains currently programs and information for the original pi-top laptop and the pi-topCEED.
-It has not been tested with the new pi-top laptop (released October 15, 2017) with the sliding keyboard. It will be
-updated as soon as possible.
+> **Important!**
+> This repository contains currently programs and information for the original pi-top laptop and the pi-topCEED.
+> It has not been tested with the new pi-top laptop (released October 13, 2017) with the sliding keyboard.
+> It will probably not work on this new device.
+> I will add details on how to use Raspbian on this new device as soon as they become available.
 
 For other linux distributions, see the links at the bottom of this page.
 
@@ -68,7 +70,7 @@ This program is for Raspbian Stretch or Jessie only, it should not be installed 
 This program will help to protect your battery by shutting the pi-top-hub-controller
 off after a shutdown of the Raspbery Pi
 
-**INSTALLATION INSTRUCTIONS FOR 2 AND/OR 3**
+**Installation instructions for 2 and/or 3**
 
 To download this repository, open a terminal and type:
 ```
@@ -99,7 +101,7 @@ To install 3 (automatic poweroff)
 
 Your new software will work after the next bootup.
 
-*Instructions to compile the programs*
+**Compile the programs 2 and 3**
 
 To compile the  programs (only required if you want to modify the c programs), use
 ```
@@ -107,7 +109,7 @@ make
 ```
 Then use the install scripts again to reinstall the programs
 
-*Upgrading the programs*
+**Upgrading the programs 2 and/or 3**
 
 Open a terminal and type
 
@@ -120,7 +122,30 @@ Open a terminal and type
 
 If you do not have the folder pi-top-install in Downloads anymore, you need to do a complete new installation.
 
-*What to do if brightness and shutdown stop working*
+**Unistalling the programs 2 and/or 3**
+
+Open a terminal and type
+
+```
+  cd Dowloads/pi-top-install
+  git pull
+  chmod +x uninstall*
+  ./uninstall-brightness
+  ./uninstall-poweroff
+```
+
+If you do not have the folder pi-top-install in Downloads anymore, you need to first do a complete new installation.
+
+If you have edited or copied /home/pi/.config/openbox/lxde-pi-rc.xml to enable the keyboard brightness keys,
+you also need to undo those changes. Either edit the file, or restore the original distributed version using
+the command
+
+```
+  cp /etc/xdg/openbox/lxde-pi-rc.xml /home/pi/.config/openbox/lxde-pi-rc.xml
+```
+
+
+**What to do if brightness and shutdown stop working**
 
 If you have just upgraded your system and brightness or shutdown does not work anymore, install the programs again.
 Something might have been overwritten during the upgrade process.
@@ -143,5 +168,6 @@ The contributions in this repository are distributed in the hope that they will 
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The owner of this repository
 is not affiliated with pi-top.
 
-Using the pi-top with other linux distributions:
+**Using the pi-top with other linux distributions**
+
   - for a very nice bootable **64-bit Gentoo image for the Pi-Top**, see https://github.com/sakaki-/gentoo-on-rpi3-64bit
