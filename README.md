@@ -52,7 +52,7 @@ keyboard section of /home/pi/.config/openbox/lxde-pi-rc.xml:
 ```
 
 Instead, you can also copy the lxde-pi-rc.xml file found in this repository to /home/pi/.config/openbox
-This filealso contains working keys for autio mute toggle, audio volume +, audio volume -, file manager and terminal.
+This file also contains working keys for audio mute toggle, audio volume +, audio volume -, file manager and terminal.
 
 Very experienced users can use the command "brightness off" to turn the screen backlight off, and "brightness on"
 or any other brightness command to turn it back on. But be aware that a turned off screen backlight might easily be
@@ -68,7 +68,9 @@ normally do. It is therefore not recommended for regular users to use the comman
 This program is for Raspbian Stretch or Jessie only, it should not be installed in pi-topOS.
 
 This program will help to protect your battery by shutting the pi-top-hub-controller
-off after a shutdown of the Raspbery Pi
+off after a shutdown of the Raspberry Pi using the menu, console commands or a programmed shutdown.
+*It does not implement a proper shutdown if the power button is used.* Do not use the power button
+to shutdown the pi-top.
 
 **Installation instructions for 2 and/or 3**
 
@@ -122,7 +124,7 @@ Open a terminal and type
 
 If you do not have the folder pi-top-install in Downloads anymore, you need to do a complete new installation.
 
-**Unistalling the programs 2 and/or 3**
+**Uninstalling the programs 2 and/or 3**
 
 Open a terminal and type
 
