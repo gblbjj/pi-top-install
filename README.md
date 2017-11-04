@@ -3,8 +3,8 @@ Do you want to run the standard **Raspbian Stretch** on the pi-top or pi-topCEED
 
 > **Important!**
 > This repository contains programs and information for the original pi-top laptop and the pi-topCEED.
-> There is now new and improved software from pi-to available for Raspbian Stetch.
-> See details [here](http:github.com/rricharz/pi-top-setup)
+> There is now new and improved software from pi-top available for Raspbian Stretch.
+> See details [here](http:github.com/rricharz/pi-top-setup).
 > The software in this repository is therefore **deprecated**.
 
 **1 - Battery status display widget (deprecated)**
