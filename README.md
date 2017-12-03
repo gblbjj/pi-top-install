@@ -130,3 +130,6 @@ the command
 The contributions in this repository are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY;
 without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. The owner of this repository
 is not affiliated with pi-top.
+
+Please open an issue in this repository or write to rricharz77@gmail.com if you have any feedback
+or problem with this repository. Your input is appreciated.
