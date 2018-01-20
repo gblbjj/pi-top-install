@@ -1,11 +1,14 @@
 # pi-top-install
 Do you want to run the standard **Raspbian Stretch** on the pi-top or pi-topCEED?
 
-> **Important!**
-> This repository contains programs and information for the original pi-top laptop and the pi-topCEED.
-> There is now new and improved software from pi-top available for Raspbian Stretch.
-> See details [here](http:github.com/rricharz/pi-top-setup).
-> The software in this repository is therefore **deprecated**.
+> **IMPORTANT!**
+> This repository contains deprecated programs and information for the original pi-top laptop and the pi-topCEED.
+> There is now new and improved software available for using Raspbian Stretch on the pi-top.
+> See details here [up-to-date instructions for using Raspbian Stretch on the pi-top](http:github.com/rricharz/pi-top-setup).
+> The software in this repository is **deprecated**. It is **not** compatible with the latest
+> software for the pi-topSPEAKER and the pi-topPULSE, and does **not** work on the pi-top laptop version 2.
+> If you have used the software in this repository up to now, it is therefore strongly recommended to
+> switch to the up-to-date software (link above).
 
 **1 - Battery status display widget (deprecated)**
 
